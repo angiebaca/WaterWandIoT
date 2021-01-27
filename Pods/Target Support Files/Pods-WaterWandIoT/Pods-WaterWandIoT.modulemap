@@ -1,0 +1,6 @@
+framework module Pods_WaterWandIoT {
+  umbrella header "Pods-WaterWandIoT-umbrella.h"
+
+  export *
+  module * { export * }
+}
