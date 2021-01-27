@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Mapbox
 
 struct ContentView: View {
     var body: some View {
