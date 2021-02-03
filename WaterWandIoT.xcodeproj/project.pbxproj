@@ -70,7 +70,6 @@
 		DF01E4C325C095240087AA67 = {
 			isa = PBXGroup;
 			children = (
-				DF01E50A25C13F770087AA67 /* Frameworks */,
 				DF01E4CE25C095240087AA67 /* WaterWandIoT */,
 				DF01E4CD25C095240087AA67 /* Products */,
 				4736E0D6D61157DB63AC68C9 /* Frameworks */,
@@ -104,15 +103,6 @@
 				DF01E4D625C095290087AA67 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		DF01E50A25C13F770087AA67 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DF01E50E25C13FAD0087AA67 /* Mapbox.framework */,
-				DF01E50B25C13F9D0087AA67 /* MapboxMobileEvents.framework */,
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
