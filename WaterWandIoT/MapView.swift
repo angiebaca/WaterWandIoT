@@ -91,8 +91,18 @@ struct MapView: UIViewRepresentable {
 
         }
         
-        func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
-            return nil
+        func mapView(_ mapView: MGLMapView, imageFor annotation: MGLAnnotation) -> MGLAnnotationImage? {
+            
+            var annotationImage = mapView.dequeueReusableAnnotationImage(withIdentifier: "house-icon")
+            
+            if annotationImage == nil {
+                var image = UIImage(named: "house-icon")!
+                
+                annotationImage = MGLAnnotationImage(image: image,reuseIdentifier: "house-icon")
+            }
+            
+            return annotationImage
+            
         }
          
         func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
