@@ -96,9 +96,9 @@ struct MapView: UIViewRepresentable {
             var annotationImage = mapView.dequeueReusableAnnotationImage(withIdentifier: "house-icon")
             
             if annotationImage == nil {
-                var image = UIImage(named: "house-icon")!
+                var image = UIImage(named: "watericon")!
                 
-                annotationImage = MGLAnnotationImage(image: image,reuseIdentifier: "house-icon")
+                annotationImage = MGLAnnotationImage(image: image,reuseIdentifier: "watericon")
             }
             
             return annotationImage
