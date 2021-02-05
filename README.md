@@ -4,5 +4,5 @@ Water Wand Application which is supposed to pair with Water Wand Device via AWS 
 
 ## Tools
 
-Mapbox Frameworks
-Mapbox public Token 
+- Mapbox Frameworks
+- Mapbox public Token 
