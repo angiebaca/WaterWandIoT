@@ -20,64 +20,12 @@ struct ContentView: View {
     @State var annotations: [MGLPointAnnotation] = [
             MGLPointAnnotation(title: "Mapbox", coordinate: .init(latitude: 37.791434, longitude: -122.396267))
         ]
-    let gradient = Gradient(colors: [.white, .backGroundBlue])
         
     var body: some View {
-
         TabView {
-            
-            ZStack { // tab 1 - home
-                LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
-                HStack {
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    
-                    VStack {
-                        Spacer()
-                        
-                        Image.init(systemName: "plus")
-                        
-                        Spacer()
-                    
-                        Button(action: {
-                            UIApplication.shared.open(URL(string:"https://crestcache.fiu.edu")!)
-                        }) { // FIXME add action
-                            Image("crest")
-                                .resizable()
-                                .scaledToFit()
-                                .padding()
-                        }
-                        
-                        Spacer()
-                        
-                        Image("ww")
-                            .resizable()
-                            .scaledToFit()
-                            .cornerRadius(30)
-                        
-                        Spacer()
-                        
-                        Button(action: {
-                            UIApplication.shared.open(URL(string:"http://biaynabogosian.com/research/fiu-waterwandiot")!)
-                        }) { // FIXME add action
-                            Text("LEARN MORE")
-                                .bold()
-                                .padding()
-                                .background(Color.blue)
-                                .foregroundColor(Color.white)
-                                .cornerRadius(50)
-                        }
-                        
-                        Spacer()
-                    }
-                    
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                }
-            }.tabItem {Image(systemName: "house.fill")} // end tab 1 ZStack
-            
+            ZStack{
+                HomeTabView().tabItem {Image(systemName: "house.fill")}
+            }
             ZStack {// tab 2 - map tab
                 MapView(annotations: $annotations).centerCoordinate(.init(latitude: 37.791293, longitude: -122.396324)).zoomLevel(16)
             }.tabItem { Image(systemName: "pin.fill") }
