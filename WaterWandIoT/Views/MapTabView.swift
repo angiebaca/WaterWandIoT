@@ -2,7 +2,7 @@
 //  MapTabView.swift
 //  WaterWandIoT
 //
-//  Created by Alvaro Palacios on 2/7/21.
+//  Created by Angie Baca on 2/7/21.
 //
 
 import SwiftUI

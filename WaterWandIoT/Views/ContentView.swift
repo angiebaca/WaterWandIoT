@@ -17,10 +17,6 @@ import Mapbox
 
 struct ContentView: View {
     
-    @State var annotations: [MGLPointAnnotation] = [
-            MGLPointAnnotation(title: "Mapbox", coordinate: .init(latitude: 37.791434, longitude: -122.396267))
-        ]
-    
     init() {
         UITabBar.appearance().shadowImage = UIImage()
         UITabBar.appearance().backgroundImage = UIImage()
@@ -40,10 +36,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-/* GARBAGE
- 
- //        Text("Anthony Jose de la Torre").foregroundColor(.white).padding().background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.green/*@END_MENU_TOKEN@*/).cornerRadius(/*@START_MENU_TOKEN@*/15.0/*@END_MENU_TOKEN@*/).padding().background(Color.blue).cornerRadius(15)
- 
- */
 

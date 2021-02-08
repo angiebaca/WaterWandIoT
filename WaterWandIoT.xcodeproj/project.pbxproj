@@ -96,14 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				DF01E4CF25C095240087AA67 /* WaterWandIoTApp.swift */,
-				DF01E4D125C095240087AA67 /* ContentView.swift */,
-				DF89CCA825D0D9E100C2C50B /* HomeTabView.swift */,
-				DF89CCAE25D0E02B00C2C50B /* MapTabView.swift */,
-				DF89CCB025D0E2FE00C2C50B /* SettingsTabView.swift */,
+				DF89CCB725D0EB4200C2C50B /* GlueCode */,
+				DF89CCB625D0EB1300C2C50B /* Views */,
 				DF01E4D325C095290087AA67 /* Assets.xcassets */,
 				DF01E4D825C095290087AA67 /* Info.plist */,
-				DF01E4E625C107BE0087AA67 /* MapView.swift */,
-				DF89CCA025D0C1AC00C2C50B /* Color.swift */,
 				DF01E4D525C095290087AA67 /* Preview Content */,
 			);
 			path = WaterWandIoT;
@@ -115,6 +111,26 @@
 				DF01E4D625C095290087AA67 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF89CCB625D0EB1300C2C50B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF01E4D125C095240087AA67 /* ContentView.swift */,
+				DF89CCA825D0D9E100C2C50B /* HomeTabView.swift */,
+				DF89CCAE25D0E02B00C2C50B /* MapTabView.swift */,
+				DF89CCB025D0E2FE00C2C50B /* SettingsTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF89CCB725D0EB4200C2C50B /* GlueCode */ = {
+			isa = PBXGroup;
+			children = (
+				DF01E4E625C107BE0087AA67 /* MapView.swift */,
+				DF89CCA025D0C1AC00C2C50B /* Color.swift */,
+			);
+			path = GlueCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
