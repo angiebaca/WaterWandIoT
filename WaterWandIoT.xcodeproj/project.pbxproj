@@ -11,21 +11,22 @@
 		DF01E4D225C095240087AA67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01E4D125C095240087AA67 /* ContentView.swift */; };
 		DF01E4D425C095290087AA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF01E4D325C095290087AA67 /* Assets.xcassets */; };
 		DF01E4D725C095290087AA67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF01E4D625C095290087AA67 /* Preview Assets.xcassets */; };
-		DF01E51025C13FD60087AA67 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50E25C13FAD0087AA67 /* Mapbox.framework */; };
-		DF01E51125C13FD60087AA67 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50E25C13FAD0087AA67 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DF01E51325C13FD70087AA67 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50B25C13F9D0087AA67 /* MapboxMobileEvents.framework */; };
-		DF01E51425C13FD70087AA67 /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50B25C13F9D0087AA67 /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF01E4E725C107BE0087AA67 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01E4E625C107BE0087AA67 /* MapView.swift */; };
+		DF01E50525C12F080087AA67 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50125C12D300087AA67 /* Mapbox.framework */; };
+		DF01E50625C12F080087AA67 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50125C12D300087AA67 /* Mapbox.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DF01E50725C12F0A0087AA67 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50325C12D3C0087AA67 /* MapboxMobileEvents.framework */; };
+		DF01E50825C12F0A0087AA67 /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50325C12D3C0087AA67 /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DF01E51225C13FD60087AA67 /* Embed Frameworks */ = {
+		DF01E4F825C12AA90087AA67 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DF01E51425C13FD70087AA67 /* MapboxMobileEvents.framework in Embed Frameworks */,
-				DF01E51125C13FD60087AA67 /* Mapbox.framework in Embed Frameworks */,
+				DF01E50825C12F0A0087AA67 /* MapboxMobileEvents.framework in Embed Frameworks */,
+				DF01E50625C12F080087AA67 /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,8 +40,9 @@
 		DF01E4D325C095290087AA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF01E4D625C095290087AA67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF01E4D825C095290087AA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF01E50B25C13F9D0087AA67 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
-		DF01E50E25C13FAD0087AA67 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		DF01E4E625C107BE0087AA67 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DF01E50125C12D300087AA67 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		DF01E50325C12D3C0087AA67 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,20 +50,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF01E51325C13FD70087AA67 /* MapboxMobileEvents.framework in Frameworks */,
-				DF01E51025C13FD60087AA67 /* Mapbox.framework in Frameworks */,
+				DF01E50725C12F0A0087AA67 /* MapboxMobileEvents.framework in Frameworks */,
+				DF01E50525C12F080087AA67 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4736E0D6D61157DB63AC68C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF01E50125C12D300087AA67 /* Mapbox.framework */,
+				DF01E50325C12D3C0087AA67 /* MapboxMobileEvents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DF01E4C325C095240087AA67 = {
 			isa = PBXGroup;
 			children = (
-				DF01E50A25C13F770087AA67 /* Frameworks */,
 				DF01E4CE25C095240087AA67 /* WaterWandIoT */,
 				DF01E4CD25C095240087AA67 /* Products */,
+				4736E0D6D61157DB63AC68C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +89,7 @@
 			children = (
 				DF01E4CF25C095240087AA67 /* WaterWandIoTApp.swift */,
 				DF01E4D125C095240087AA67 /* ContentView.swift */,
+				DF01E4E625C107BE0087AA67 /* MapView.swift */,
 				DF01E4D325C095290087AA67 /* Assets.xcassets */,
 				DF01E4D825C095290087AA67 /* Info.plist */,
 				DF01E4D525C095290087AA67 /* Preview Content */,
@@ -93,15 +105,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DF01E50A25C13F770087AA67 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DF01E50E25C13FAD0087AA67 /* Mapbox.framework */,
-				DF01E50B25C13F9D0087AA67 /* MapboxMobileEvents.framework */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,7 +115,7 @@
 				DF01E4C825C095240087AA67 /* Sources */,
 				DF01E4C925C095240087AA67 /* Frameworks */,
 				DF01E4CA25C095240087AA67 /* Resources */,
-				DF01E51225C13FD60087AA67 /* Embed Frameworks */,
+				DF01E4F825C12AA90087AA67 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF01E4D225C095240087AA67 /* ContentView.swift in Sources */,
+				DF01E4E725C107BE0087AA67 /* MapView.swift in Sources */,
 				DF01E4D025C095240087AA67 /* WaterWandIoTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,9 +307,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WaterWandIoT/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = WaterWandIoT/Info.plist;
@@ -316,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fiu.WaterWandIoT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -328,9 +335,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WaterWandIoT/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = WaterWandIoT/Info.plist;
@@ -341,6 +350,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fiu.WaterWandIoT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
