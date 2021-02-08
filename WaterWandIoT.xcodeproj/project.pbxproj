@@ -16,6 +16,8 @@
 		DF89CCA925D0D9E100C2C50B /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89CCA825D0D9E100C2C50B /* HomeTabView.swift */; };
 		DF89CCAB25D0DEB300C2C50B /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF89CCAA25D0DEB300C2C50B /* Mapbox.framework */; };
 		DF89CCAD25D0DEC300C2C50B /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF89CCAC25D0DEC300C2C50B /* MapboxMobileEvents.framework */; };
+		DF89CCAF25D0E02B00C2C50B /* MapTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89CCAE25D0E02B00C2C50B /* MapTabView.swift */; };
+		DF89CCB125D0E2FE00C2C50B /* SettingsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89CCB025D0E2FE00C2C50B /* SettingsTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,8 @@
 		DF89CCA825D0D9E100C2C50B /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		DF89CCAA25D0DEB300C2C50B /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		DF89CCAC25D0DEC300C2C50B /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
+		DF89CCAE25D0E02B00C2C50B /* MapTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabView.swift; sourceTree = "<group>"; };
+		DF89CCB025D0E2FE00C2C50B /* SettingsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				DF01E4CF25C095240087AA67 /* WaterWandIoTApp.swift */,
 				DF01E4D125C095240087AA67 /* ContentView.swift */,
 				DF89CCA825D0D9E100C2C50B /* HomeTabView.swift */,
+				DF89CCAE25D0E02B00C2C50B /* MapTabView.swift */,
+				DF89CCB025D0E2FE00C2C50B /* SettingsTabView.swift */,
 				DF01E4D325C095290087AA67 /* Assets.xcassets */,
 				DF01E4D825C095290087AA67 /* Info.plist */,
 				DF01E4E625C107BE0087AA67 /* MapView.swift */,
@@ -178,6 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF01E4D225C095240087AA67 /* ContentView.swift in Sources */,
+				DF89CCB125D0E2FE00C2C50B /* SettingsTabView.swift in Sources */,
+				DF89CCAF25D0E02B00C2C50B /* MapTabView.swift in Sources */,
 				DF89CCA125D0C1AC00C2C50B /* Color.swift in Sources */,
 				DF89CCA925D0D9E100C2C50B /* HomeTabView.swift in Sources */,
 				DF01E4E725C107BE0087AA67 /* MapView.swift in Sources */,

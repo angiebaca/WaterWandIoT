@@ -20,21 +20,17 @@ struct ContentView: View {
     @State var annotations: [MGLPointAnnotation] = [
             MGLPointAnnotation(title: "Mapbox", coordinate: .init(latitude: 37.791434, longitude: -122.396267))
         ]
+    
+    init() {
+        UITabBar.appearance().shadowImage = UIImage()
+        UITabBar.appearance().backgroundImage = UIImage()
+    }
         
     var body: some View {
         TabView {
-            ZStack{
-                HomeTabView().tabItem {Image(systemName: "house.fill")}
-            }
-            ZStack {// tab 2 - map tab
-                MapView(annotations: $annotations).centerCoordinate(.init(latitude: 37.791293, longitude: -122.396324)).zoomLevel(16)
-            }.tabItem { Image(systemName: "pin.fill") }
-            
-            Text("SETTINGS TAB").bold() // tab 3 - settings tab
-                .tabItem{Image(systemName: "gearshape.fill")}
-            
-            
-            
+            HomeTabView().tabItem { Image(systemName: "house.fill") }
+            MapTabView().tabItem { Image(systemName: "pin.fill") }
+            SettingsTabView().tabItem{ Image(systemName: "gearshape.fill") }
         } // END TabView
     } // END var body: some View
 } // END struct ContentView: View
