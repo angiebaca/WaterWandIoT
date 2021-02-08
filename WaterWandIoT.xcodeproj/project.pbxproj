@@ -16,6 +16,7 @@
 		DF01E50625C12F080087AA67 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50125C12D300087AA67 /* Mapbox.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DF01E50725C12F0A0087AA67 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50325C12D3C0087AA67 /* MapboxMobileEvents.framework */; };
 		DF01E50825C12F0A0087AA67 /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50325C12D3C0087AA67 /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DF89CCA125D0C1AC00C2C50B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89CCA025D0C1AC00C2C50B /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		DF01E4E625C107BE0087AA67 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DF01E50125C12D300087AA67 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		DF01E50325C12D3C0087AA67 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
+		DF89CCA025D0C1AC00C2C50B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				DF01E4CF25C095240087AA67 /* WaterWandIoTApp.swift */,
 				DF01E4D125C095240087AA67 /* ContentView.swift */,
 				DF01E4E625C107BE0087AA67 /* MapView.swift */,
+				DF89CCA025D0C1AC00C2C50B /* Color.swift */,
 				DF01E4D325C095290087AA67 /* Assets.xcassets */,
 				DF01E4D825C095290087AA67 /* Info.plist */,
 				DF01E4D525C095290087AA67 /* Preview Content */,
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF01E4D225C095240087AA67 /* ContentView.swift in Sources */,
+				DF89CCA125D0C1AC00C2C50B /* Color.swift in Sources */,
 				DF01E4E725C107BE0087AA67 /* MapView.swift in Sources */,
 				DF01E4D025C095240087AA67 /* WaterWandIoTApp.swift in Sources */,
 			);

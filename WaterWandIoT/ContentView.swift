@@ -20,13 +20,14 @@ struct ContentView: View {
     @State var annotations: [MGLPointAnnotation] = [
             MGLPointAnnotation(title: "Mapbox", coordinate: .init(latitude: 37.791434, longitude: -122.396267))
         ]
+    let gradient = Gradient(colors: [.white, .backGroundBlue])
         
     var body: some View {
 
         TabView {
             
             ZStack { // tab 1 - home
-                Color(.cyan).ignoresSafeArea()
+                LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
                 HStack {
                     Spacer()
                     Spacer()
