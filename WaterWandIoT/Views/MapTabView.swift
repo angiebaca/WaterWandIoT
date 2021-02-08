@@ -14,8 +14,11 @@ struct MapTabView: View {
             MGLPointAnnotation(title: "Mapbox", coordinate: .init(latitude: 37.791434, longitude: -122.396267))
         ]
     
+    let gradient = Gradient(colors: [.white, .backGroundBlue])
+    
     var body: some View {
         ZStack {
+            LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
             MapView(annotations: $annotations).centerCoordinate(.init(latitude: 37.791293, longitude: -122.396324)).zoomLevel(16)
         }
     }

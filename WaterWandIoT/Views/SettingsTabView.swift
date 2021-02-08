@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct SettingsTabView: View {
+    
+    let gradient = Gradient(colors: [.white, .backGroundBlue])
+    
     var body: some View {
-        Text("SETTINGS TAB").bold()
+        ZStack {
+            LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+            Text("SETTINGS TAB").bold()
+        }
     }
 }
 
