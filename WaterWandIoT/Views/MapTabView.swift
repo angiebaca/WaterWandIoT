@@ -18,6 +18,7 @@ struct MapTabView: View {
     
     let gradient = Gradient(colors: [.white, .backGroundBlue])
     
+    //JUST INITIALIZING REMOVE LATER
     var locations = [
         CLLocationCoordinate2D(latitude: 25.747951, longitude: -80.382897)
     ]
@@ -84,8 +85,8 @@ struct MapTabView: View {
                 
                 Spacer()
                 
-                //WHERE STATE VAR ANNOTATIONS SHOULD BE DEFINED BUT LONG/LATS ARE POPULATED WITH THE
-                //CONTENTS OF THE LOCATIONS ARRAY
+                //WHERE STATE VAR ANNOTATIONS SHOULD BE DEFINED BUT LONG/LATS ARE POPULATED WITH THE CONTENTS OF THE LOCATIONS ARRAY
+                //CENTER COORDINATE SHOULD BE USERS LOCATION
                 MapView(annotations: $annotations).centerCoordinate(.init(latitude: 25.747951, longitude: -80.382897)).zoomLevel(10)
             }//END VSTACK
         }//END ZSTACK
