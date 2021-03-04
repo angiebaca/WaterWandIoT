@@ -20,6 +20,9 @@
 		DF89CCB325D0EA8100C2C50B /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF89CCAA25D0DEB300C2C50B /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DF89CCB425D0EA8200C2C50B /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF89CCAC25D0DEC300C2C50B /* MapboxMobileEvents.framework */; };
 		DF89CCB525D0EA8200C2C50B /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF89CCAC25D0DEC300C2C50B /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF90819E25F0906100665F69 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90819D25F0906100665F69 /* Parser.swift */; };
+		DF9081A425F0908500665F69 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9081A325F0908500665F69 /* Device.swift */; };
+		DF9081A625F090DB00665F69 /* DummyData.json in Resources */ = {isa = PBXBuildFile; fileRef = DF9081A525F090DB00665F69 /* DummyData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +54,9 @@
 		DF89CCAC25D0DEC300C2C50B /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
 		DF89CCAE25D0E02B00C2C50B /* MapTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabView.swift; sourceTree = "<group>"; };
 		DF89CCB025D0E2FE00C2C50B /* SettingsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabView.swift; sourceTree = "<group>"; };
+		DF90819D25F0906100665F69 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		DF9081A325F0908500665F69 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		DF9081A525F090DB00665F69 /* DummyData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DummyData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,9 @@
 			children = (
 				DF01E4E625C107BE0087AA67 /* MapView.swift */,
 				DF89CCA025D0C1AC00C2C50B /* Color.swift */,
+				DF90819D25F0906100665F69 /* Parser.swift */,
+				DF9081A325F0908500665F69 /* Device.swift */,
+				DF9081A525F090DB00665F69 /* DummyData.json */,
 			);
 			path = GlueCode;
 			sourceTree = "<group>";
@@ -191,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9081A625F090DB00665F69 /* DummyData.json in Resources */,
 				DF01E4D725C095290087AA67 /* Preview Assets.xcassets in Resources */,
 				DF01E4D425C095290087AA67 /* Assets.xcassets in Resources */,
 			);
@@ -207,9 +217,11 @@
 				DF89CCB125D0E2FE00C2C50B /* SettingsTabView.swift in Sources */,
 				DF89CCAF25D0E02B00C2C50B /* MapTabView.swift in Sources */,
 				DF89CCA125D0C1AC00C2C50B /* Color.swift in Sources */,
+				DF90819E25F0906100665F69 /* Parser.swift in Sources */,
 				DF89CCA925D0D9E100C2C50B /* HomeTabView.swift in Sources */,
 				DF01E4E725C107BE0087AA67 /* MapView.swift in Sources */,
 				DF01E4D025C095240087AA67 /* WaterWandIoTApp.swift in Sources */,
+				DF9081A425F0908500665F69 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
