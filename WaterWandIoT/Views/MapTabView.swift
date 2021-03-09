@@ -8,13 +8,49 @@
 import SwiftUI
 import Mapbox
 
+let devices = Bundle.main.decode("DummyData.json")
+
+class DeviceAnnotation: MGLPointAnnotation {
+    
+    var depth: Double!
+    var temperature: Double!
+    var conductivity: Int!
+    var turbidity: Int!
+    
+}
+
+func addAnnotations(device: Device) -> MGLPointAnnotation {
+    let point = DeviceAnnotation()
+    
+    point.coordinate = CLLocationCoordinate2D(latitude: device.latitude, longitude: device.longitude)
+    point.title = device.id
+    point.depth = device.depth
+    point.temperature = device.temperature
+    point.conductivity = device.conductivity
+    point.turbidity = device.turbidity
+    
+    return point
+    
+}
+
+func getAnnotations() -> [MGLPointAnnotation] {
+    
+    var array_of_devices: [MGLPointAnnotation]  = []
+    devices.forEach({ (item) in
+        array_of_devices.append(addAnnotations(device: item))
+    })
+    
+    return array_of_devices
+}
 struct MapTabView: View {
     
 //    JUST HARDCODING THIS TO MAKE SURE MULTIPLE ANNOTATIONS WORK
     @State var annotations: [MGLPointAnnotation] = [
-        MGLPointAnnotation(title: "ID:0", coordinate: .init(latitude: 25.747951, longitude: -80.382897)),
-        MGLPointAnnotation(title: "ID:1", coordinate: .init(latitude: 25.755656, longitude: -80.400107))
+//        MGLPointAnnotation(title: "ID:0", coordinate: .init(latitude: 25.747951, longitude: -80.382897)),
+//        MGLPointAnnotation(title: "ID:1", coordinate: .init(latitude: 25.755656, longitude: -80.400107))
         ]
+    
+    var selected_devices: [MGLPointAnnotation] = []
     
     let gradient = Gradient(colors: [.white, .backGroundBlue])
     
@@ -27,7 +63,7 @@ struct MapTabView: View {
 
                     Spacer()
                     Button(action: {
-                        MapView(annotations: $annotations).filterButtonSelectedAtIndex(1)
+                        selected_devices.append(contentsOf: getAnnotations())
                     }) {
                         Text("Your Device")
                             .bold()
@@ -40,6 +76,7 @@ struct MapTabView: View {
                     Spacer()
                     Button(action: {
                         MapView(annotations: $annotations).filterButtonSelectedAtIndex(2)
+                        
                     }) {
                         Text("All Devices")
                             .bold()

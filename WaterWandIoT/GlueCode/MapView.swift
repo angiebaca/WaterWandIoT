@@ -19,8 +19,6 @@ extension MGLPointAnnotation {
 struct MapView: UIViewRepresentable {
     @Binding var annotations: [MGLPointAnnotation]
     
-    let devices = Bundle.main.decode("DummyData.json")
-    
     private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
     
     // MARK: - Configuring UIViewRepresentable protocol
@@ -62,48 +60,6 @@ struct MapView: UIViewRepresentable {
         mapView.addAnnotations(annotations)
     }
     
-    class DeviceAnnotation: MGLPointAnnotation {
-        
-        var depth: Double!
-        var temperature: Double!
-        var conductivity: Int!
-        var turbidity: Int!
-        
-    }
-
-    func addAnnotations(device: Device) {
-        let point = DeviceAnnotation()
-        
-        point.coordinate = CLLocationCoordinate2D(latitude: device.latitude, longitude: device.longitude)
-        point.title = device.id
-        point.depth = device.depth
-        point.temperature = device.temperature
-        point.conductivity = device.conductivity
-        point.turbidity = device.turbidity
-        
-        mapView.addAnnotation(point)
-        mapView.selectAnnotation(point, animated: true)
-        
-    }
-    
-    func filterButtonSelectedAtIndex(_ index: Int) {
-        
-        if let currentAnnotations = mapView.annotations {
-            mapView.removeAnnotations(currentAnnotations)
-        }
-        
-        for _device in devices {
-            if index ==  1 {
-                addAnnotations(device: _device)
-                break
-            }
-            if index == 2 {
-                addAnnotations(device: _device)
-            }
-        }
-        
-        
-    }
     
     // MARK: - Implementing MGLMapViewDelegate
     
