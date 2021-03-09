@@ -44,26 +44,23 @@ func getAnnotations() -> [MGLPointAnnotation] {
 }
 struct MapTabView: View {
     
-//    JUST HARDCODING THIS TO MAKE SURE MULTIPLE ANNOTATIONS WORK
-    @State var annotations: [MGLPointAnnotation] = [
-//        MGLPointAnnotation(title: "ID:0", coordinate: .init(latitude: 25.747951, longitude: -80.382897)),
-//        MGLPointAnnotation(title: "ID:1", coordinate: .init(latitude: 25.755656, longitude: -80.400107))
-        ]
-    
-    var selected_devices: [MGLPointAnnotation] = []
+    @State var annotations: [MGLPointAnnotation] = []
     
     let gradient = Gradient(colors: [.white, .backGroundBlue])
     
     var body: some View {
         ZStack {
             LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+            MapView(annotations: $annotations).centerCoordinate(.init(latitude: 25.747951, longitude: -80.382897)).zoomLevel(10)
             VStack {
                 
                 HStack {
 
                     Spacer()
                     Button(action: {
-                        selected_devices.append(contentsOf: getAnnotations())
+                        let selected_devices = getAnnotations()
+                        self.annotations.removeAll()
+                        self.annotations.append(MGLPointAnnotation(title: selected_devices[0].title!, coordinate: selected_devices[0].coordinate))
                     }) {
                         Text("Your Device")
                             .bold()
@@ -75,8 +72,11 @@ struct MapTabView: View {
                     
                     Spacer()
                     Button(action: {
-                        MapView(annotations: $annotations).filterButtonSelectedAtIndex(2)
-                        
+                        let selected_devices = getAnnotations()
+                        self.annotations.removeAll()
+                        for dev in selected_devices {
+                            self.annotations.append(MGLPointAnnotation(title: dev.title!, coordinate: dev.coordinate))
+                        }
                     }) {
                         Text("All Devices")
                             .bold()
@@ -101,11 +101,7 @@ struct MapTabView: View {
                 }//END THIRD BUTTON
                 
                 Spacer()
-                
-                //WHERE STATE VAR ANNOTATIONS SHOULD BE DEFINED BUT LONG/LATS ARE POPULATED WITH THE CONTENTS OF THE LOCATIONS ARRAY
-                
-                //CENTER COORDINATE SHOULD BE USERS LOCATION
-                MapView(annotations: $annotations).centerCoordinate(.init(latitude: 25.747951, longitude: -80.382897)).zoomLevel(10)
+
             }//END VSTACK
         }//END ZSTACK
     }//END BODY
