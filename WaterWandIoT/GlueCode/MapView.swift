@@ -16,10 +16,10 @@ extension MGLPointAnnotation {
     }
 }
 
-let devices = Bundle.main.decode("DummyData.json")
-
 struct MapView: UIViewRepresentable {
     @Binding var annotations: [MGLPointAnnotation]
+    
+    let devices = Bundle.main.decode("DummyData.json")
     
     private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
     
@@ -64,8 +64,8 @@ struct MapView: UIViewRepresentable {
     
     class DeviceAnnotation: MGLPointAnnotation {
         
-        var depth: Float!
-        var temperature: Float!
+        var depth: Double!
+        var temperature: Double!
         var conductivity: Int!
         var turbidity: Int!
         
@@ -75,7 +75,7 @@ struct MapView: UIViewRepresentable {
         let point = DeviceAnnotation()
         
         point.coordinate = CLLocationCoordinate2D(latitude: device.latitude, longitude: device.longitude)
-        point.title = String(device.id)
+        point.title = device.id
         point.depth = device.depth
         point.temperature = device.temperature
         point.conductivity = device.conductivity

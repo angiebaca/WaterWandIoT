@@ -1,21 +1,21 @@
 [
     {
-        "ID": 00
-        "latitude": 25.747951
-        "longitude": -80.382897
-        "depth": 0.68
-        "temperature": 70.1
-        "conductivity": 1159
-        "turbidity": 301
+        "id": "00",
+        "latitude": 25.747951,
+        "longitude": -80.382897,
+        "depth": 0.68,
+        "temperature": 70.1,
+        "conductivity": 1159,
+        "turbidity": 301,
     },
     {
-        "ID": 01
-        "latitude": 25.755656
-        "longitude": -80.400107
-        "depth": 1.32
-        "temperature": 78.1
-        "conductivity": 1006
-        "turbidity": 73
+        "id": "01",
+        "latitude": 25.755656,
+        "longitude": -80.400107,
+        "depth": 1.32,
+        "temperature": 78.1,
+        "conductivity": 1006,
+        "turbidity": 73,
     }
         
 ]

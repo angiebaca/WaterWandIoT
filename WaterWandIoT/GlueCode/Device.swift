@@ -8,12 +8,12 @@ import Foundation
 import Mapbox
 
 struct Device: Codable, Identifiable {
-    var id: Int
-    var latitude: CLLocationDegrees
-    var longitude: CLLocationDegrees
-    var depth: Float
-    var temperature: Float
-    var conductivity: Int
-    var turbidity: Int
+    let id: String
+    let latitude: Double
+    let longitude: Double
+    let depth: Double
+    let temperature: Double
+    let conductivity: Int
+    let turbidity: Int
 }
 
