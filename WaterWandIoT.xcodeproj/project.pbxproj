@@ -23,6 +23,7 @@
 		DF90819E25F0906100665F69 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90819D25F0906100665F69 /* Parser.swift */; };
 		DF9081A425F0908500665F69 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9081A325F0908500665F69 /* Device.swift */; };
 		DF9081A625F090DB00665F69 /* DummyData.json in Resources */ = {isa = PBXBuildFile; fileRef = DF9081A525F090DB00665F69 /* DummyData.json */; };
+		DF9E6926260911EF00B7C152 /* ViewInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E6925260911EF00B7C152 /* ViewInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,7 @@
 		DF90819D25F0906100665F69 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		DF9081A325F0908500665F69 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		DF9081A525F090DB00665F69 /* DummyData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DummyData.json; sourceTree = "<group>"; };
+		DF9E6925260911EF00B7C152 /* ViewInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				DF89CCA825D0D9E100C2C50B /* HomeTabView.swift */,
 				DF89CCAE25D0E02B00C2C50B /* MapTabView.swift */,
 				DF89CCB025D0E2FE00C2C50B /* SettingsTabView.swift */,
+				DF9E6925260911EF00B7C152 /* ViewInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				DF90819E25F0906100665F69 /* Parser.swift in Sources */,
 				DF89CCA925D0D9E100C2C50B /* HomeTabView.swift in Sources */,
 				DF01E4E725C107BE0087AA67 /* MapView.swift in Sources */,
+				DF9E6926260911EF00B7C152 /* ViewInfoView.swift in Sources */,
 				DF01E4D025C095240087AA67 /* WaterWandIoTApp.swift in Sources */,
 				DF9081A425F0908500665F69 /* Device.swift in Sources */,
 			);

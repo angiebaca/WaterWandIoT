@@ -45,10 +45,11 @@ func getAnnotations() -> [MGLPointAnnotation] {
 struct MapTabView: View {
     
     @State var annotations: [MGLPointAnnotation] = []
-    
     let gradient = Gradient(colors: [.white, .backGroundBlue])
+    let selected_devices = getAnnotations()
     
     var body: some View {
+            
         ZStack {
             LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
             MapView(annotations: $annotations).centerCoordinate(.init(latitude: 25.747951, longitude: -80.382897)).zoomLevel(10)
@@ -58,7 +59,6 @@ struct MapTabView: View {
 
                     Spacer()
                     Button(action: {
-                        let selected_devices = getAnnotations()
                         self.annotations.removeAll()
                         self.annotations.append(MGLPointAnnotation(title: selected_devices[0].title!, coordinate: selected_devices[0].coordinate))
                     }) {
@@ -72,7 +72,6 @@ struct MapTabView: View {
                     
                     Spacer()
                     Button(action: {
-                        let selected_devices = getAnnotations()
                         self.annotations.removeAll()
                         for dev in selected_devices {
                             self.annotations.append(MGLPointAnnotation(title: dev.title!, coordinate: dev.coordinate))
