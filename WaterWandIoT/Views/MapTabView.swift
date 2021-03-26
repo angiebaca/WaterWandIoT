@@ -48,62 +48,65 @@ struct MapTabView: View {
     let gradient = Gradient(colors: [.white, .backGroundBlue])
     let selected_devices = getAnnotations()
     
+    
+    
     var body: some View {
-            
-        ZStack {
-            LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
-            MapView(annotations: $annotations).centerCoordinate(.init(latitude: 25.747951, longitude: -80.382897)).zoomLevel(10)
-            VStack {
-                
-                HStack {
+        NavigationView {
+            ZStack {
+                LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+                MapView(annotations: $annotations).centerCoordinate(.init(latitude: 25.747951, longitude: -80.382897)).zoomLevel(10).offset(y:80)
+                VStack {
+                    
+                    HStack {
 
-                    Spacer()
-                    Button(action: {
-                        self.annotations.removeAll()
-                        self.annotations.append(MGLPointAnnotation(title: selected_devices[0].title!, coordinate: selected_devices[0].coordinate))
-                    }) {
-                        Text("Your Device")
-                            .bold()
-                            .padding()
-                            .background(Color.backGroundBlue)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(50)
-                    }//END FIRST BUTTON
+                        Spacer()
+                        Button(action: {
+                            self.annotations.removeAll()
+                            self.annotations.append(MGLPointAnnotation(title: selected_devices[0].title!, coordinate: selected_devices[0].coordinate))
+                        }) {
+                            Text("Your Device")
+                                .bold()
+                                .padding()
+                                .background(Color.backGroundBlue)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(50)
+                        }//END FIRST BUTTON
+                        
+                        Spacer()
+                        Button(action: {
+                            self.annotations.removeAll()
+                            for dev in selected_devices {
+                                self.annotations.append(MGLPointAnnotation(title: dev.title!, coordinate: dev.coordinate))
+                            }
+                        }) {
+                            Text("All Devices")
+                                .bold()
+                                .padding()
+                                .background(Color.backGroundBlue)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(50)
+                        }//END SECOND BUTTON
+                        
+                        Spacer()
+                        Button(action: {
+                            //SHOW INFORMATION DEPENDING ON WHICH FLAG IS SET(MIMICK TAPPING ON ICONS???)
+                        }) {
+                            Text("View Info")
+                                .bold()
+                                .padding()
+                                .background(Color.backGroundBlue)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(50)
+                        }//END THIRD BUTTON
+                        Spacer()
+                    }//HSTACK
                     
                     Spacer()
-                    Button(action: {
-                        self.annotations.removeAll()
-                        for dev in selected_devices {
-                            self.annotations.append(MGLPointAnnotation(title: dev.title!, coordinate: dev.coordinate))
-                        }
-                    }) {
-                        Text("All Devices")
-                            .bold()
-                            .padding()
-                            .background(Color.backGroundBlue)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(50)
-                    }//END SECOND BUTTON
-                    
-                    Spacer()
-                    Button(action: {
-                        //SHOW INFORMATION DEPENDING ON WHICH FLAG IS SET(MIMICK TAPPING ON ICONS???)
-                    }) {
-                        Text("View Info")
-                            .bold()
-                            .padding()
-                            .background(Color.backGroundBlue)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(50)
-                    }
-                    Spacer()
-                }//END THIRD BUTTON
-                
-                Spacer()
 
-            }//END VSTACK
-        }//END ZSTACK
-    }//END BODY
+                }//END VSTACK
+            }//END ZSTACK
+        }.frame(height: 900).offset(y:-20)//END NAVIGATION VIEW
+        }//END BODY
 }//END VIEW
 
 

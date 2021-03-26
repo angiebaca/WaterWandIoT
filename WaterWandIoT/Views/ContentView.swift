@@ -21,14 +21,12 @@ struct ContentView: View {
         UITabBar.appearance().shadowImage = UIImage()
         UITabBar.appearance().backgroundImage = UIImage()
     }
-    
-    @State private var selection = 0
-        
+            
     var body: some View {
-        TabView(selection: $selection) {
-            HomeTabView().tabItem { Image(systemName: "house.fill") }.tag(0)
-            MapTabView().tabItem { Image(systemName: "pin.fill") }.tag(1)
-            SettingsTabView().tabItem{ Image(systemName: "gearshape.fill") }.tag(2)
+        TabView() {
+            HomeTabView().tabItem { Image(systemName: "house.fill") }
+            MapTabView().tabItem { Image(systemName: "pin.fill") }
+            SettingsTabView().tabItem{ Image(systemName: "gearshape.fill") }
         } // END TabView
     } // END var body: some View
 } // END struct ContentView: View
