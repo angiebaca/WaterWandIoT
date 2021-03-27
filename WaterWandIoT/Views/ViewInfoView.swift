@@ -29,9 +29,7 @@ struct ViewInfoView: View {
                         .foregroundColor(.white)
                 }.listRowBackground(Color.backGroundBlue)
             }
-            
-    }
-    
+        }
 }
 
 struct ViewInfoView_Previews: PreviewProvider {

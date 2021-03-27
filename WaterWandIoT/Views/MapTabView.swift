@@ -47,13 +47,12 @@ struct MapTabView: View {
     @State var annotations: [MGLPointAnnotation] = []
     let gradient = Gradient(colors: [.white, .backGroundBlue])
     let selected_devices = getAnnotations()
-    
-    
+
     
     var body: some View {
         NavigationView {
             ZStack {
-                LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+                LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea().offset(y:-300)
                 MapView(annotations: $annotations).centerCoordinate(.init(latitude: 25.747951, longitude: -80.382897)).zoomLevel(10).offset(y:80)
                 VStack {
                     
@@ -100,10 +99,10 @@ struct MapTabView: View {
                     }//HSTACK
                     
                     Spacer()
-
+                        
                 }//END VSTACK
-            }//END ZSTACK
-        }.frame(height: 900).offset(y:-20)//END NAVIGATION VIEW
+            }.navigationBarTitle("Map Filter")//END ZSTACK
+        }.frame(height: 850)//END NAVIGATION VIEW
         }//END BODY
 }//END VIEW
 

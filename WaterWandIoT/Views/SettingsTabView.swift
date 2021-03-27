@@ -33,7 +33,7 @@ struct SettingsTabView: View {
                             destination: Text("\(index) Details"),
                             label: {
                                 Text("\(index)")
-                                    .font(.system(size: 38, weight: .bold, design: .default))
+                                    .font(.system(size: 38, weight: .semibold, design: .monospaced))
                                     .foregroundColor(.white)
                             })
                     }.listRowBackground(Color.backGroundBlue)
