@@ -88,16 +88,14 @@ struct MapTabView: View {
                         }//END SECOND BUTTON
                         
                         Spacer()
-                        Button(action: {
-                            //SHOW INFORMATION DEPENDING ON WHICH FLAG IS SET(MIMICK TAPPING ON ICONS???)
-                        }) {
+                        NavigationLink(destination: ViewInfoView(), label: {
                             Text("View Info")
                                 .bold()
                                 .padding()
                                 .background(Color.backGroundBlue)
                                 .foregroundColor(Color.white)
                                 .cornerRadius(50)
-                        }//END THIRD BUTTON
+                        })//END THIRD BUTTON
                         Spacer()
                     }//HSTACK
                     

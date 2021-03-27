@@ -7,7 +7,7 @@
 import Foundation
 import Mapbox
 
-struct Device: Codable, Identifiable {
+struct Device: Codable, Identifiable, Hashable {
     let id: String
     let latitude: Double
     let longitude: Double
