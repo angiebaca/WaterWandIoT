@@ -12,10 +12,18 @@
 		DF01E4D425C095290087AA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF01E4D325C095290087AA67 /* Assets.xcassets */; };
 		DF01E4D725C095290087AA67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF01E4D625C095290087AA67 /* Preview Assets.xcassets */; };
 		DF01E4E725C107BE0087AA67 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01E4E625C107BE0087AA67 /* MapView.swift */; };
-		DF01E50525C12F080087AA67 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50125C12D300087AA67 /* Mapbox.framework */; };
-		DF01E50625C12F080087AA67 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50125C12D300087AA67 /* Mapbox.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DF01E50725C12F0A0087AA67 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50325C12D3C0087AA67 /* MapboxMobileEvents.framework */; };
-		DF01E50825C12F0A0087AA67 /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF01E50325C12D3C0087AA67 /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DF89CCA125D0C1AC00C2C50B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89CCA025D0C1AC00C2C50B /* Color.swift */; };
+		DF89CCA925D0D9E100C2C50B /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89CCA825D0D9E100C2C50B /* HomeTabView.swift */; };
+		DF89CCAF25D0E02B00C2C50B /* MapTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89CCAE25D0E02B00C2C50B /* MapTabView.swift */; };
+		DF89CCB125D0E2FE00C2C50B /* SettingsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89CCB025D0E2FE00C2C50B /* SettingsTabView.swift */; };
+		DF89CCB225D0EA8100C2C50B /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF89CCAA25D0DEB300C2C50B /* Mapbox.framework */; };
+		DF89CCB325D0EA8100C2C50B /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF89CCAA25D0DEB300C2C50B /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF89CCB425D0EA8200C2C50B /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF89CCAC25D0DEC300C2C50B /* MapboxMobileEvents.framework */; };
+		DF89CCB525D0EA8200C2C50B /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF89CCAC25D0DEC300C2C50B /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF90819E25F0906100665F69 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90819D25F0906100665F69 /* Parser.swift */; };
+		DF9081A425F0908500665F69 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9081A325F0908500665F69 /* Device.swift */; };
+		DF9081A625F090DB00665F69 /* DummyData.json in Resources */ = {isa = PBXBuildFile; fileRef = DF9081A525F090DB00665F69 /* DummyData.json */; };
+		DF9E6926260911EF00B7C152 /* ViewInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E6925260911EF00B7C152 /* ViewInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,8 +33,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DF01E50825C12F0A0087AA67 /* MapboxMobileEvents.framework in Embed Frameworks */,
-				DF01E50625C12F080087AA67 /* Mapbox.framework in Embed Frameworks */,
+				DF89CCB525D0EA8200C2C50B /* MapboxMobileEvents.framework in Embed Frameworks */,
+				DF89CCB325D0EA8100C2C50B /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,8 +49,16 @@
 		DF01E4D625C095290087AA67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF01E4D825C095290087AA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF01E4E625C107BE0087AA67 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		DF01E50125C12D300087AA67 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
-		DF01E50325C12D3C0087AA67 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
+		DF89CCA025D0C1AC00C2C50B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		DF89CCA825D0D9E100C2C50B /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		DF89CCAA25D0DEB300C2C50B /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		DF89CCAC25D0DEC300C2C50B /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
+		DF89CCAE25D0E02B00C2C50B /* MapTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabView.swift; sourceTree = "<group>"; };
+		DF89CCB025D0E2FE00C2C50B /* SettingsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabView.swift; sourceTree = "<group>"; };
+		DF90819D25F0906100665F69 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		DF9081A325F0908500665F69 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		DF9081A525F090DB00665F69 /* DummyData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DummyData.json; sourceTree = "<group>"; };
+		DF9E6925260911EF00B7C152 /* ViewInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF01E50725C12F0A0087AA67 /* MapboxMobileEvents.framework in Frameworks */,
-				DF01E50525C12F080087AA67 /* Mapbox.framework in Frameworks */,
+				DF89CCB425D0EA8200C2C50B /* MapboxMobileEvents.framework in Frameworks */,
+				DF89CCB225D0EA8100C2C50B /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +77,8 @@
 		4736E0D6D61157DB63AC68C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF01E50125C12D300087AA67 /* Mapbox.framework */,
-				DF01E50325C12D3C0087AA67 /* MapboxMobileEvents.framework */,
+				DF89CCAA25D0DEB300C2C50B /* Mapbox.framework */,
+				DF89CCAC25D0DEC300C2C50B /* MapboxMobileEvents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,8 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				DF01E4CF25C095240087AA67 /* WaterWandIoTApp.swift */,
-				DF01E4D125C095240087AA67 /* ContentView.swift */,
-				DF01E4E625C107BE0087AA67 /* MapView.swift */,
+				DF89CCB725D0EB4200C2C50B /* GlueCode */,
+				DF89CCB625D0EB1300C2C50B /* Views */,
 				DF01E4D325C095290087AA67 /* Assets.xcassets */,
 				DF01E4D825C095290087AA67 /* Info.plist */,
 				DF01E4D525C095290087AA67 /* Preview Content */,
@@ -103,6 +119,30 @@
 				DF01E4D625C095290087AA67 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF89CCB625D0EB1300C2C50B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF01E4D125C095240087AA67 /* ContentView.swift */,
+				DF89CCA825D0D9E100C2C50B /* HomeTabView.swift */,
+				DF89CCAE25D0E02B00C2C50B /* MapTabView.swift */,
+				DF89CCB025D0E2FE00C2C50B /* SettingsTabView.swift */,
+				DF9E6925260911EF00B7C152 /* ViewInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF89CCB725D0EB4200C2C50B /* GlueCode */ = {
+			isa = PBXGroup;
+			children = (
+				DF01E4E625C107BE0087AA67 /* MapView.swift */,
+				DF89CCA025D0C1AC00C2C50B /* Color.swift */,
+				DF90819D25F0906100665F69 /* Parser.swift */,
+				DF9081A325F0908500665F69 /* Device.swift */,
+				DF9081A525F090DB00665F69 /* DummyData.json */,
+			);
+			path = GlueCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9081A625F090DB00665F69 /* DummyData.json in Resources */,
 				DF01E4D725C095290087AA67 /* Preview Assets.xcassets in Resources */,
 				DF01E4D425C095290087AA67 /* Assets.xcassets in Resources */,
 			);
@@ -176,8 +217,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF01E4D225C095240087AA67 /* ContentView.swift in Sources */,
+				DF89CCB125D0E2FE00C2C50B /* SettingsTabView.swift in Sources */,
+				DF89CCAF25D0E02B00C2C50B /* MapTabView.swift in Sources */,
+				DF89CCA125D0C1AC00C2C50B /* Color.swift in Sources */,
+				DF90819E25F0906100665F69 /* Parser.swift in Sources */,
+				DF89CCA925D0D9E100C2C50B /* HomeTabView.swift in Sources */,
 				DF01E4E725C107BE0087AA67 /* MapView.swift in Sources */,
+				DF9E6926260911EF00B7C152 /* ViewInfoView.swift in Sources */,
 				DF01E4D025C095240087AA67 /* WaterWandIoTApp.swift in Sources */,
+				DF9081A425F0908500665F69 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
