@@ -26,7 +26,7 @@ struct ContentView: View {
         TabView() {
             HomeTabView().tabItem { Image(systemName: "house.fill") }
             MapTabView().tabItem { Image(systemName: "pin.fill") }
-            SettingsTabView().tabItem{ Image(systemName: "gearshape.fill") }
+            LogIn().tabItem{ Image(systemName: "gearshape.fill") }
         } // END TabView
     } // END var body: some View
 } // END struct ContentView: View

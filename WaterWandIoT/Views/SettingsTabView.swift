@@ -25,24 +25,23 @@ struct SettingsTabView: View {
                               "Contact Us"]
     
     var body: some View {
-        NavigationView {
-            ZStack{
-                List {
-                    ForEach(self.itemList, id: \.self) { index in
-                        NavigationLink(
-                            destination: Text("\(index) Details"),
-                            label: {
-                                Text("\(index)")
-                                    .font(.system(size: 38, weight: .semibold, design: .monospaced))
-                                    .foregroundColor(.white)
-                            })
-                    }.listRowBackground(Color.backGroundBlue)
+        VStack{
+            List {
+                ForEach(self.itemList, id: \.self) { index in
+                NavigationLink(
+                    destination: Text("\(index) Details"),
+                    label: {
+                        Text("\(index)")
+                        .font(.system(size: 25, weight: .semibold, design: .monospaced))
+                        .foregroundColor(.white)
+                    })
                 }
-            }
-            .navigationBarTitle("User Menu")
-        }
-    }
-}
+                .listRowBackground(Color.backGroundBlue)
+                .navigationBarTitle("User Menu")
+            }//END LIST
+        }//END VSTACK
+    }//END VIEW
+}//END BODY
 
 struct SettingsTabView_Previews: PreviewProvider {
     static var previews: some View {
