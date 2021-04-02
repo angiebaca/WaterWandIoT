@@ -8,7 +8,7 @@
 import SwiftUI
 import Mapbox
 
-let devices = Bundle.main.decode("DummyData.json")
+let devices = Bundle.main.decode([Device].self, from: "DummyData.json")
 
 class DeviceAnnotation: MGLPointAnnotation {
     

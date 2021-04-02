@@ -1,5 +1,5 @@
 //
-//  SettingsTabView.swift
+//  UserView.swift
 //  WaterWandIoT
 //
 //  Created by Angie Baca on 2/7/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SettingsTabView: View {
+struct UserView: View {
     
     let gradient = Gradient(colors: [.white, .backGroundBlue])
     let backGroundBlue = UIColor(red: 23/255, green:  138/255, blue: 180/255, alpha: 1.0)
@@ -31,15 +31,34 @@ struct SettingsTabView: View {
             LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea().offset(y:100)
         VStack{
             List {
-                ForEach(self.itemList, id: \.self) { index in
                 NavigationLink(
-                    destination: Text("\(index) Details"),
+                    destination: AddDevice(),
                     label: {
-                        Text("\(index)")
+                        Text("Add Device")
                         .font(.system(size: 25, weight: .bold, design: .monospaced))
                         .foregroundColor(.backGroundBlue)
                     })
-                }
+                NavigationLink(
+                    destination: DataCapture(),
+                    label: {
+                        Text("Data Capture")
+                        .font(.system(size: 25, weight: .bold, design: .monospaced))
+                        .foregroundColor(.backGroundBlue)
+                    })
+                NavigationLink(
+                    destination: Text("Notification Details"),
+                    label: {
+                        Text("Notifications")
+                        .font(.system(size: 25, weight: .bold, design: .monospaced))
+                        .foregroundColor(.backGroundBlue)
+                    })
+                NavigationLink(
+                    destination: Text("Contact Us Details"),
+                    label: {
+                        Text("Contact Us")
+                        .font(.system(size: 25, weight: .bold, design: .monospaced))
+                        .foregroundColor(.backGroundBlue)
+                    })
                 .listRowBackground(Color.clear)
                 .navigationBarTitle("User Menu")
             }//END LIST
@@ -48,8 +67,8 @@ struct SettingsTabView: View {
     }//END VIEW
 }//END BODY
 
-struct SettingsTabView_Previews: PreviewProvider {
+struct UserView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsTabView()
+        UserView()
     }
 }

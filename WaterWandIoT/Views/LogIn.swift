@@ -34,8 +34,8 @@ struct LogIn: View {
                     .padding(.bottom, 20)
                     .frame(width: 270, height: 60)
                     .offset(y:-40)
-                NavigationLink(destination: SettingsTabView(), label: {
-                    LoginButtonContent()
+                NavigationLink(destination: UserView(), label: {
+                    SignupButtonContent()
                 }).offset(y:-40)
                 Button(action: {print("create account")}, label: {
                     CreateAccount()
@@ -74,7 +74,7 @@ struct UserImage: View {
     }
 }
 
-struct LoginButtonContent: View {
+struct SignupButtonContent: View {
     var body: some View {
         Text("Sign Up")
             .font(.title2)
