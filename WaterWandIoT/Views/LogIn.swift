@@ -43,7 +43,7 @@ struct LogIn: View {
             }//END VSTACK
             .padding()
             }
-        }.accentColor(.white)//END NAVIGATION VIEW
+        }.accentColor(.backGroundBlue)//END NAVIGATION VIEW
     }//END BODY
 }//END VIEW
 struct LogIn_Previews: PreviewProvider {

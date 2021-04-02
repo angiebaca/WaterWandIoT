@@ -9,12 +9,14 @@ import SwiftUI
 
 struct SettingsTabView: View {
     
+    let gradient = Gradient(colors: [.white, .backGroundBlue])
     let backGroundBlue = UIColor(red: 23/255, green:  138/255, blue: 180/255, alpha: 1.0)
     
     init() {
-        UITableView.appearance().backgroundColor = backGroundBlue
+        UITableView.appearance().backgroundColor = .clear
+        UITableViewCell.appearance().backgroundColor = .clear
         
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: backGroundBlue]
         
     }
     
@@ -25,6 +27,8 @@ struct SettingsTabView: View {
                               "Contact Us"]
     
     var body: some View {
+        ZStack{
+            LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea().offset(y:100)
         VStack{
             List {
                 ForEach(self.itemList, id: \.self) { index in
@@ -32,14 +36,15 @@ struct SettingsTabView: View {
                     destination: Text("\(index) Details"),
                     label: {
                         Text("\(index)")
-                        .font(.system(size: 25, weight: .semibold, design: .monospaced))
-                        .foregroundColor(.white)
+                        .font(.system(size: 25, weight: .bold, design: .monospaced))
+                        .foregroundColor(.backGroundBlue)
                     })
                 }
-                .listRowBackground(Color.backGroundBlue)
+                .listRowBackground(Color.clear)
                 .navigationBarTitle("User Menu")
             }//END LIST
         }//END VSTACK
+        }//END ZSTACK
     }//END VIEW
 }//END BODY
 
