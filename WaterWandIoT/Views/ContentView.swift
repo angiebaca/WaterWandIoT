@@ -24,9 +24,9 @@ struct ContentView: View {
             
     var body: some View {
         TabView() {
-            HomeTabView().tabItem { Image(systemName: "house.fill") }
-            MapTabView().tabItem { Image(systemName: "pin.fill") }
-            LogIn().tabItem{ Image(systemName: "gearshape.fill") }
+            HomeTabView().tabItem { Image("HOME")}
+            MapTabView().tabItem { Image("PIN") }
+            LogIn().tabItem{ Image("USER") }
         } // END TabView
     } // END var body: some View
 } // END struct ContentView: View
