@@ -12,28 +12,22 @@ struct LogIn: View {
     @State var username: String = ""
     @State var password: String = ""
     
-    
     var body: some View {
-        let gradient = Gradient(colors: [.white, .backGroundBlue])
         NavigationView {
-            ZStack{
-                LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
             VStack {
                 WelcomeText().offset(y:-40)
                 UserImage().offset(y:-40)
-                TextField("Email address", text: $username)
+                TextField("Username", text: $username)
                     .padding()
                     .background(Color.lightGreyColor)
-                    .cornerRadius(10.0)
+                    .cornerRadius(5.0)
                     .padding(.bottom, 20)
-                    .frame(width: 270, height: 60)
                     .offset(y:-40)
                 SecureField("Password", text: $password)
                     .padding()
                     .background(Color.lightGreyColor)
-                    .cornerRadius(10.0)
+                    .cornerRadius(5.0)
                     .padding(.bottom, 20)
-                    .frame(width: 270, height: 60)
                     .offset(y:-40)
                 NavigationLink(destination: SettingsTabView(), label: {
                     LoginButtonContent()
@@ -43,8 +37,7 @@ struct LogIn: View {
                 }).offset(y:-30)
             }//END VSTACK
             .padding()
-            }
-        }.accentColor(.white)//END NAVIGATION VIEW
+        }//END NAVIGATION VIEW
     }//END BODY
 }//END VIEW
 
@@ -56,17 +49,16 @@ struct LogIn_Previews: PreviewProvider {
 
 struct WelcomeText: View {
     var body: some View {
-        Text("Create Account")
+        Text("Log-In")
             .font(.largeTitle)
             .fontWeight(.semibold)
             .padding(.bottom, 20)
-            .foregroundColor(.backGroundBlue)
     }
 }
 
 struct UserImage: View {
     var body: some View {
-        Image("login")
+        Image("userImage")
             .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width: 150, height: 150)
@@ -78,22 +70,21 @@ struct UserImage: View {
 
 struct LoginButtonContent: View {
     var body: some View {
-        Text("Sign Up")
-            .font(.title2)
-            .bold()
-            .foregroundColor(.backGroundBlue)
+        Text("LOGIN")
+            .font(.headline)
+            .foregroundColor(.white)
             .padding()
-            .frame(width: 160, height: 60)
-            .background(Color.white)
-            .cornerRadius(30.0)
+            .frame(width: 220, height: 60)
+            .background(Color.green)
+            .cornerRadius(15.0)
     }
 }
 
 struct CreateAccount: View {
     var body: some View {
-        Text("Log-in")
+        Text("Create Account")
             .font(.headline)
-            .foregroundColor(.white)
+            .foregroundColor(.blue)
             .frame(width: 220, height: 20)
     }
 }

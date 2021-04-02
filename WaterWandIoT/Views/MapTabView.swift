@@ -102,7 +102,7 @@ struct MapTabView: View {
                         
                 }//END VSTACK
             }.navigationBarTitle("Map Filter")//END ZSTACK
-        }.accentColor(.white).frame(height: 850)//END NAVIGATION VIEW
+        }.frame(height: 850)//END NAVIGATION VIEW
         }//END BODY
 }//END VIEW
 
