@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct WaterWandIoTApp: App {
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isOnboarding {
+                Onboarding();
+            } else {
+                ContentView();
+            }
+           
         }
     }
 }

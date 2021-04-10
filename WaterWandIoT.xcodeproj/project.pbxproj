@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0B6EF65262118120055F0B6 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6EF64262118120055F0B6 /* Onboarding.swift */; };
+		C0B6EF67262119220055F0B6 /* TutorialTabOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6EF66262119220055F0B6 /* TutorialTabOne.swift */; };
+		C0B6EF6926211C180055F0B6 /* TutorialTabFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6EF6826211C180055F0B6 /* TutorialTabFive.swift */; };
+		C0B6EF6B262125050055F0B6 /* TutorialTabTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6EF6A262125050055F0B6 /* TutorialTabTwo.swift */; };
+		C0B6EF6D2621269A0055F0B6 /* TutorialTabThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6EF6C2621269A0055F0B6 /* TutorialTabThree.swift */; };
+		C0B6EF6F262128F50055F0B6 /* TutorialTabFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6EF6E262128F50055F0B6 /* TutorialTabFour.swift */; };
 		DF01E4D025C095240087AA67 /* WaterWandIoTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01E4CF25C095240087AA67 /* WaterWandIoTApp.swift */; };
 		DF01E4D225C095240087AA67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01E4D125C095240087AA67 /* ContentView.swift */; };
 		DF01E4D425C095290087AA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF01E4D325C095290087AA67 /* Assets.xcassets */; };
@@ -42,6 +48,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C0B6EF64262118120055F0B6 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		C0B6EF66262119220055F0B6 /* TutorialTabOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialTabOne.swift; sourceTree = "<group>"; };
+		C0B6EF6826211C180055F0B6 /* TutorialTabFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialTabFive.swift; sourceTree = "<group>"; };
+		C0B6EF6A262125050055F0B6 /* TutorialTabTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialTabTwo.swift; sourceTree = "<group>"; };
+		C0B6EF6C2621269A0055F0B6 /* TutorialTabThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialTabThree.swift; sourceTree = "<group>"; };
+		C0B6EF6E262128F50055F0B6 /* TutorialTabFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialTabFour.swift; sourceTree = "<group>"; };
 		DF01E4CC25C095240087AA67 /* WaterWandIoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterWandIoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF01E4CF25C095240087AA67 /* WaterWandIoTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWandIoTApp.swift; sourceTree = "<group>"; };
 		DF01E4D125C095240087AA67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +141,12 @@
 				DF89CCAE25D0E02B00C2C50B /* MapTabView.swift */,
 				DF89CCB025D0E2FE00C2C50B /* SettingsTabView.swift */,
 				DF9E6925260911EF00B7C152 /* ViewInfoView.swift */,
+				C0B6EF64262118120055F0B6 /* Onboarding.swift */,
+				C0B6EF66262119220055F0B6 /* TutorialTabOne.swift */,
+				C0B6EF6A262125050055F0B6 /* TutorialTabTwo.swift */,
+				C0B6EF6C2621269A0055F0B6 /* TutorialTabThree.swift */,
+				C0B6EF6E262128F50055F0B6 /* TutorialTabFour.swift */,
+				C0B6EF6826211C180055F0B6 /* TutorialTabFive.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,9 +236,15 @@
 			files = (
 				DF01E4D225C095240087AA67 /* ContentView.swift in Sources */,
 				DF89CCB125D0E2FE00C2C50B /* SettingsTabView.swift in Sources */,
+				C0B6EF6D2621269A0055F0B6 /* TutorialTabThree.swift in Sources */,
 				DF89CCAF25D0E02B00C2C50B /* MapTabView.swift in Sources */,
 				DF89CCA125D0C1AC00C2C50B /* Color.swift in Sources */,
+				C0B6EF6B262125050055F0B6 /* TutorialTabTwo.swift in Sources */,
+				C0B6EF6926211C180055F0B6 /* TutorialTabFive.swift in Sources */,
+				C0B6EF6F262128F50055F0B6 /* TutorialTabFour.swift in Sources */,
+				C0B6EF67262119220055F0B6 /* TutorialTabOne.swift in Sources */,
 				DF90819E25F0906100665F69 /* Parser.swift in Sources */,
+				C0B6EF65262118120055F0B6 /* Onboarding.swift in Sources */,
 				DF89CCA925D0D9E100C2C50B /* HomeTabView.swift in Sources */,
 				DF01E4E725C107BE0087AA67 /* MapView.swift in Sources */,
 				DF9E6926260911EF00B7C152 /* ViewInfoView.swift in Sources */,
@@ -373,6 +397,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -401,6 +426,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};

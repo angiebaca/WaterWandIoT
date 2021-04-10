@@ -9,8 +9,11 @@ import SwiftUI
 
 struct HomeTabView: View {
     
+    //properties
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
     let gradient = Gradient(colors: [.white, .backGroundBlue])
     
+    // body 
     var body: some View {
         ZStack {
             LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
@@ -44,10 +47,24 @@ struct HomeTabView: View {
                     
                     Spacer()
                     
+                    // button 1 to url link
                     Button(action: {
                         UIApplication.shared.open(URL(string:"http://biaynabogosian.com/research/fiu-waterwandiot")!)
                     }) { // FIXME add action
-                        Text("LEARN MORE")
+                        Text("Learn More")
+                            .bold()
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(Color.white)
+                            .cornerRadius(50)
+                    }
+                    
+                    // button 2 to reset onboarding
+                    Button(action: {
+                        // replay app onboarding
+                        isOnboarding = true
+                    }) { // FIXME add action
+                        Text("Replay Onboarding")
                             .bold()
                             .padding()
                             .background(Color.blue)
