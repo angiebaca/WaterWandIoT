@@ -16,7 +16,7 @@ struct HomeTabView: View {
     // body 
     var body: some View {
         ZStack {
-            LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+            LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea().offset(y:100)
             HStack {
                 Spacer()
                 Spacer()
