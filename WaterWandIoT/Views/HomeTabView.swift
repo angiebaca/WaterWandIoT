@@ -16,60 +16,58 @@ struct HomeTabView: View {
     // body 
     var body: some View {
         ZStack {
-            LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea().offset(y:100)
+            LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
             HStack {
                 Spacer()
                 Spacer()
                 Spacer()
                 
                 VStack {
-                    Spacer()
                     
-                    Image.init(systemName: "plus")
+                    HStack {
+                        Button(action: {
+                            UIApplication.shared.open(URL(string:"https://crestcache.fiu.edu")!)
+                        }) {
+                            Image("crest")
+                                .resizable()
+                                .frame(width: 180, height:50)
+                                .padding()
+                                
+                        }
+                        Spacer()
+                    }.padding()
                     
-                    Spacer()
-                
-                    Button(action: {
-                        UIApplication.shared.open(URL(string:"https://crestcache.fiu.edu")!)
-                    }) { // FIXME add action
-                        Image("crest")
-                            .resizable()
-                            .scaledToFit()
-                            .padding()
-                    }
                     
-                    Spacer()
-                    
-                    Image("ww")
+                    Image("noun_wand_white")
                         .resizable()
-                        .scaledToFit()
-                        .cornerRadius(30)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 300, height: 300)
+                        .padding()
                     
-                    Spacer()
+                    Text("Water Wand IoT")
+                        .padding()
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                    
+                    Text("Empowering citizen-scientists")
+                        .padding()
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .offset(y:-25)
+                        
                     
                     // button 1 to url link
                     Button(action: {
                         UIApplication.shared.open(URL(string:"http://biaynabogosian.com/research/fiu-waterwandiot")!)
                     }) { // FIXME add action
-                        Text("Learn More")
+                        Text("About")
+                            .font(.title2)
                             .bold()
+                            .foregroundColor(.backGroundBlue)
                             .padding()
-                            .background(Color.blue)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(50)
-                    }
-                    
-                    // button 2 to reset onboarding
-                    Button(action: {
-                        // replay app onboarding
-                        isOnboarding = true
-                    }) { // FIXME add action
-                        Text("Replay Onboarding")
-                            .bold()
-                            .padding()
-                            .background(Color.blue)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(50)
+                            .frame(width: 160, height: 60)
+                            .background(Color.white)
+                            .cornerRadius(30.0)
                     }
                     
                     Spacer()
