@@ -20,12 +20,6 @@ struct UserView: View {
         
     }
     
-    private var itemList = [  "Add Device",
-                              "Set-up Demo",
-                              "Data Capture",
-                              "Notifications",
-                              "Contact Us"]
-    
     var body: some View {
         ZStack{
             LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea().offset(y:100)
@@ -41,7 +35,7 @@ struct UserView: View {
                 NavigationLink(
                     destination: DataCapture(),
                     label: {
-                        Text("Data Capture")
+                        Text("Data Collection")
                         .font(.system(size: 25, weight: .bold, design: .monospaced))
                         .foregroundColor(.backGroundBlue)
                     })

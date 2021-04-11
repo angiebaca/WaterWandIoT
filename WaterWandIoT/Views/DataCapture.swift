@@ -15,8 +15,8 @@ struct DataCapture: View {
         ZStack {
             LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
             VStack {
-                Text("Data Capture Details")
-            }.padding().navigationBarTitle("Data Capture")
+                Text("Data Collection Details")
+            }.padding().navigationBarTitle("Data Collection")
         }
     }
 }

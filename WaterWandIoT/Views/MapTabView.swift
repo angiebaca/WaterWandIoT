@@ -63,15 +63,15 @@ struct MapTabView: View {
                             self.annotations.removeAll()
                             self.annotations.append(MGLPointAnnotation(title: selected_devices[0].title!, coordinate: selected_devices[0].coordinate))
                         }) {
-                            Text("Your Device")
+                            Text("My Device")
+                                .font(.caption)
                                 .bold()
                                 .padding()
                                 .background(Color.backGroundBlue)
                                 .foregroundColor(Color.white)
-                                .cornerRadius(50)
+                                .cornerRadius(80)
                         }//END FIRST BUTTON
                         
-                        Spacer()
                         Button(action: {
                             self.annotations.removeAll()
                             for dev in selected_devices {
@@ -79,21 +79,22 @@ struct MapTabView: View {
                             }
                         }) {
                             Text("All Devices")
+                                .font(.caption)
                                 .bold()
                                 .padding()
                                 .background(Color.backGroundBlue)
                                 .foregroundColor(Color.white)
-                                .cornerRadius(50)
+                                .cornerRadius(80)
                         }//END SECOND BUTTON
                         
-                        Spacer()
                         NavigationLink(destination: ViewInfoView(), label: {
                             Text("View Info")
+                                .font(.caption)
                                 .bold()
                                 .padding()
                                 .background(Color.backGroundBlue)
                                 .foregroundColor(Color.white)
-                                .cornerRadius(50)
+                                .cornerRadius(80)
                         })//END THIRD BUTTON
                         Spacer()
                     }//HSTACK
@@ -101,7 +102,7 @@ struct MapTabView: View {
                     Spacer()
                         
                 }//END VSTACK
-            }.navigationBarTitle("Map Filter")//END ZSTACK
+            }.navigationBarTitle("Water Wand Locations")//END ZSTACK
         }.accentColor(.backGroundBlue).frame(height: 850)//END NAVIGATION VIEW
         }//END BODY
 }//END VIEW

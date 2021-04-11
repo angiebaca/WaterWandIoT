@@ -2,7 +2,7 @@
 //  LogIn.swift
 //  WaterWandIoT
 //
-//  Created by Alvaro Palacios on 4/1/21.
+//  Created by Angie Baca on 4/1/21.
 //
 
 import SwiftUI
