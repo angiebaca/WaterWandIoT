@@ -64,7 +64,7 @@ struct MapTabView: View {
                             self.annotations.append(MGLPointAnnotation(title: selected_devices[0].title!, coordinate: selected_devices[0].coordinate))
                         }) {
                             Text("My Device")
-                                .font(.caption)
+                                .font(Font.custom("Light", size: 12))
                                 .bold()
                                 .padding()
                                 .background(Color.backGroundBlue)
@@ -79,7 +79,7 @@ struct MapTabView: View {
                             }
                         }) {
                             Text("All Devices")
-                                .font(.caption)
+                                .font(Font.custom("Light", size: 12))
                                 .bold()
                                 .padding()
                                 .background(Color.backGroundBlue)
@@ -89,7 +89,7 @@ struct MapTabView: View {
                         
                         NavigationLink(destination: ViewInfoView(), label: {
                             Text("View Info")
-                                .font(.caption)
+                                .font(Font.custom("Light", size: 12))
                                 .bold()
                                 .padding()
                                 .background(Color.backGroundBlue)

@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MGLMapView.showUserLocation</key>
+	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiYWJhY2EwMjAiLCJhIjoiY2trZW9jYmo3MDBkaTJvcDIzNWYxa2gyaSJ9.m0OzdiZjYxssApcUWimjXQ</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -28,7 +32,14 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchScreen</key>
-	<dict/>
+	<dict>
+		<key>UIColorName</key>
+		<string>pastelBlue</string>
+		<key>UIImageName</key>
+		<string>watericon</string>
+		<key>UIImageRespectsSafeAreaInsets</key>
+		<false/>
+	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -46,9 +57,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1IjoiYWJhY2EwMjAiLCJhIjoiY2trZW9jYmo3MDBkaTJvcDIzNWYxa2gyaSJ9.m0OzdiZjYxssApcUWimjXQ</string>
-	<key>MGLMapView.showUserLocation</key>
-	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Light.otf</string>
+		<string>Bold.otf</string>
+		<string>SemiBold.otf</string>
+	</array>
 </dict>
 </plist>

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct UserView: View {
     
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
     let gradient = Gradient(colors: [.white, .backGroundBlue])
     let backGroundBlue = UIColor(red: 23/255, green:  138/255, blue: 180/255, alpha: 1.0)
     
@@ -29,31 +30,42 @@ struct UserView: View {
                     destination: AddDevice(),
                     label: {
                         Text("Add Device")
-                        .font(.system(size: 25, weight: .bold, design: .monospaced))
+                        .font(Font.custom("SemiBold", size: 25))
                         .foregroundColor(.backGroundBlue)
-                    })
+                    }).listRowBackground(Color.clear)
+                    .navigationBarTitle("User Menu")
                 NavigationLink(
                     destination: DataCapture(),
                     label: {
                         Text("Data Collection")
-                        .font(.system(size: 25, weight: .bold, design: .monospaced))
+                        .font(Font.custom("SemiBold", size: 25))
                         .foregroundColor(.backGroundBlue)
-                    })
+                    }).listRowBackground(Color.clear)
+                    .navigationBarTitle("User Menu")
                 NavigationLink(
                     destination: Text("Notification Details"),
                     label: {
                         Text("Notifications")
-                        .font(.system(size: 25, weight: .bold, design: .monospaced))
+                        .font(Font.custom("SemiBold", size: 25))
                         .foregroundColor(.backGroundBlue)
-                    })
+                    }).listRowBackground(Color.clear)
+                    .navigationBarTitle("User Menu")
                 NavigationLink(
                     destination: Text("Contact Us Details"),
                     label: {
                         Text("Contact Us")
-                        .font(.system(size: 25, weight: .bold, design: .monospaced))
+                        .font(Font.custom("SemiBold", size: 25))
                         .foregroundColor(.backGroundBlue)
-                    })
-                .listRowBackground(Color.clear)
+                    }).listRowBackground(Color.clear)
+                    .navigationBarTitle("User Menu")
+                Button(action: {
+                    // replay app onboarding
+                    isOnboarding = true
+                }) { // FIXME add action
+                    Text("Replay Onboarding")
+                        .font(Font.custom("SemiBold", size: 25))
+                        .foregroundColor(.backGroundBlue)
+                }.listRowBackground(Color.clear)
                 .navigationBarTitle("User Menu")
             }//END LIST
         }//END VSTACK

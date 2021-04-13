@@ -55,7 +55,7 @@ struct LogIn_Previews: PreviewProvider {
 struct WelcomeText: View {
     var body: some View {
         Text("Create Account")
-            .font(.largeTitle)
+            .font(Font.custom("Bold", size: 40))
             .fontWeight(.semibold)
             .padding(.bottom, 20)
             .foregroundColor(.backGroundBlue)
@@ -77,7 +77,7 @@ struct UserImage: View {
 struct SignupButtonContent: View {
     var body: some View {
         Text("Sign Up")
-            .font(.title2)
+            .font(Font.custom("Light", size: 25))
             .bold()
             .foregroundColor(.backGroundBlue)
             .padding()
@@ -90,7 +90,8 @@ struct SignupButtonContent: View {
 struct CreateAccount: View {
     var body: some View {
         Text("Log-in")
-            .font(.headline)
+            .font(Font.custom("Light", size: 20))
+            .bold()
             .foregroundColor(.white)
             .frame(width: 220, height: 20)
     }
