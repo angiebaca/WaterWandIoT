@@ -38,7 +38,7 @@ struct HomeTabView: View {
                     }.padding()
                     
                     
-                    Image("noun_wand_white")
+                    Image("")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 300, height: 300)

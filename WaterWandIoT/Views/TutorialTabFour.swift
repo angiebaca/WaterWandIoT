@@ -34,7 +34,7 @@ struct TutorialTabFour: View {
                         alignment: .center)
                 
                 // description 1
-                Text("If you have a WaterWand device and are ready to begin taking measurements, youy can login or sigh up and register you device in the login tab.")
+                Text("If you have a Water Wand device, \nyou can login or sign up to register the device and begin monitoring. \nThis step is optional.")
                     .font(Font.custom("Light", size: 20))
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
@@ -42,7 +42,7 @@ struct TutorialTabFour: View {
                     .frame(maxWidth: 480)
                 
                 // description 2
-                Text("This step is always optional.")
+                Text("You can also engage without a \ndevice and view the visualizations \nin the map tab.")
                     .font(Font.custom("Light", size: 20))
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)

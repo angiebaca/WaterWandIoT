@@ -33,7 +33,7 @@ struct TutorialTabThree: View {
                         alignment: .center)
                 
                 // description 1
-                Text("Each WaterWand pin on the map is a water sample uploaded by another user.")
+                Text("Each Water Wand pin on the map is representing a water wand device used by the FIU CREST's Citizen Science Community.")
                     .font(Font.custom("Light", size: 20))
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
@@ -41,7 +41,7 @@ struct TutorialTabThree: View {
                     .frame(maxWidth: 480)
                 
                 // description 2
-                Text("The map tab queries these water samples from an AWS cloud storage server and displays them on a MapBox map.")
+                Text("Here you can see Water Wand devices connected to our database.")
                     .font(Font.custom("Light", size: 20))
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
@@ -49,7 +49,7 @@ struct TutorialTabThree: View {
                     .frame(maxWidth: 480)
                 
                 // description 3
-                Text("Click on individual pins to display their depth, temperature, conductivity, and turbidity values.")
+                Text("Each Water Wand pin displays collected data, including position, depth, temperature, conductivity, \nand turbidity values.")
                     .font(Font.custom("Light", size: 20))
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)

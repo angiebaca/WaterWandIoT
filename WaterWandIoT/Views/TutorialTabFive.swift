@@ -22,7 +22,7 @@ struct TutorialTabFive: View {
                 Spacer()
                 
                 // title
-                Text("Welcome to WaterWand!")
+                Text("Welcome to \nWater Wand!")
                     .foregroundColor(Color.white)
                     .font(Font.custom("Bold", size: 40))
                     .fontWeight(.heavy)
@@ -35,7 +35,6 @@ struct TutorialTabFive: View {
                         height: 80,
                         alignment: .center)
                     .scaleEffect(0.5)
-                    .rotationEffect(.degrees(30))
                 
                 // description
                 Text("Get Started")

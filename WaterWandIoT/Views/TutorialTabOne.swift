@@ -34,14 +34,16 @@ struct TutorialTabOne: View {
                         width: 100.0,
                         height: 80,
                         alignment: .center)
+                    .offset(y:-20)
                 
                 // description
-                Text("Empowering and uniting citizen scientists to collect data and combat urban flooding")
+                Text("Empowering Citizen Scientists \nto Collect Water Quality Data \nand Combat Urban Flooding")
                     .font(Font.custom("Light", size: 20))
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
                     .frame(maxWidth: 480)
+                    .offset(y:-8)
                 
                 Spacer()
             } // Vstack

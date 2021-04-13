@@ -33,12 +33,13 @@ struct TutorialTabTwo: View {
                         alignment: .center)
                 
                 // description
-                Text("The home tab tells you about the team behind WaterWand, what it is, and how and where to order one when you're ready")
+                Text("The home tab tells you about the team behind Water Wand citizen science research, \nand how to get involved")
                     .font(Font.custom("Light", size: 20))
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
                     .frame(maxWidth: 480)
+                    .offset(y:-8)
                 
                 Spacer()
             } // Vstack
