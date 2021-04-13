@@ -29,12 +29,13 @@ struct TutorialTabFive: View {
                     .multilineTextAlignment(.center)
                 
                 // image
-                Image("watericon")
+                Image("WaterWand_Icon")
                     .frame(
                         width: 100.0,
                         height: 80,
                         alignment: .center)
                     .scaleEffect(0.5)
+                    .offset(y:20)
                 
                 // description
                 Text("Get Started")
@@ -43,6 +44,7 @@ struct TutorialTabFive: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
                     .frame(maxWidth: 480)
+                    .offset(y:40)
                 
                 // button
                 Button(action: {
@@ -55,7 +57,7 @@ struct TutorialTabFive: View {
                         .scaleEffect(2)
                         .padding()
                         .foregroundColor(.white)
-                }
+                }.offset(y:40)
                 
                 Spacer()
             } // Vstack

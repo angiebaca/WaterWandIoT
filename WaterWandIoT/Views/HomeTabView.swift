@@ -30,7 +30,7 @@ struct HomeTabView: View {
                         }) {
                             Image("crest")
                                 .resizable()
-                                .frame(width: 180, height:50)
+                                .frame(width: 220, height:77)
                                 .padding()
                                 
                         }
@@ -38,22 +38,23 @@ struct HomeTabView: View {
                     }.padding()
                     
                     
-                    Image("")
+                    Image("WaterWand_Icon")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: 300, height: 300)
-                        .padding()
+                        .frame(width: 350, height: 400)
+                        .offset(y:20)
                     
                     Text("Water Wand IoT")
                         .font(Font.custom("SemiBold", size: 40))
                         .padding()
                         .foregroundColor(.white)
+                        .offset(y:-20)
                     
                     Text("Empowering citizen-scientists")
                         .padding()
                         .font(Font.custom("Light", size: 25))
                         .foregroundColor(.white)
-                        .offset(y:-25)
+                        .offset(y:-45)
                         
                     
                     // button 1 to url link
@@ -68,7 +69,7 @@ struct HomeTabView: View {
                             .frame(width: 160, height: 60)
                             .background(Color.white)
                             .cornerRadius(30.0)
-                    }
+                    }.offset(y:-40)
                     
                     Spacer()
                 }

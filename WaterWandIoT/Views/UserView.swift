@@ -30,7 +30,7 @@ struct UserView: View {
                     destination: AddDevice(),
                     label: {
                         Text("Add Device")
-                        .font(Font.custom("Light", size: 30))
+                        .font(Font.custom("SemiBold", size: 25))
                         .foregroundColor(.backGroundBlue)
                     }).listRowBackground(Color.clear)
                     .navigationBarTitle("User Menu")
@@ -38,7 +38,7 @@ struct UserView: View {
                     destination: DataCapture(),
                     label: {
                         Text("Data Collection")
-                        .font(Font.custom("Light", size: 30))
+                        .font(Font.custom("SemiBold", size: 25))
                         .foregroundColor(.backGroundBlue)
                     }).listRowBackground(Color.clear)
                     .navigationBarTitle("User Menu")
@@ -46,7 +46,7 @@ struct UserView: View {
                     destination: Text("Notification Details"),
                     label: {
                         Text("Notifications")
-                        .font(Font.custom("Light", size: 30))
+                        .font(Font.custom("SemiBold", size: 25))
                         .foregroundColor(.backGroundBlue)
                     }).listRowBackground(Color.clear)
                     .navigationBarTitle("User Menu")
@@ -54,7 +54,7 @@ struct UserView: View {
                     destination: Text("Contact Us Details"),
                     label: {
                         Text("Contact Us")
-                        .font(Font.custom("Light", size: 30))
+                        .font(Font.custom("SemiBold", size: 25))
                         .foregroundColor(.backGroundBlue)
                     }).listRowBackground(Color.clear)
                     .navigationBarTitle("User Menu")
@@ -63,7 +63,7 @@ struct UserView: View {
                     isOnboarding = true
                 }) { // FIXME add action
                     Text("Replay Onboarding")
-                        .font(Font.custom("Light", size: 30))
+                        .font(Font.custom("SemiBold", size: 25))
                         .foregroundColor(.backGroundBlue)
                 }.listRowBackground(Color.clear)
                 .navigationBarTitle("User Menu")
