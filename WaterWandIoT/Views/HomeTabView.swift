@@ -45,13 +45,13 @@ struct HomeTabView: View {
                         .padding()
                     
                     Text("Water Wand IoT")
+                        .font(Font.custom("SemiBold", size: 40))
                         .padding()
-                        .font(.largeTitle)
                         .foregroundColor(.white)
                     
                     Text("Empowering citizen-scientists")
                         .padding()
-                        .font(.headline)
+                        .font(Font.custom("Light", size: 25))
                         .foregroundColor(.white)
                         .offset(y:-25)
                         
@@ -61,7 +61,7 @@ struct HomeTabView: View {
                         UIApplication.shared.open(URL(string:"http://biaynabogosian.com/research/fiu-waterwandiot")!)
                     }) { // FIXME add action
                         Text("About")
-                            .font(.title2)
+                            .font(Font.custom("Light", size: 25))
                             .bold()
                             .foregroundColor(.backGroundBlue)
                             .padding()

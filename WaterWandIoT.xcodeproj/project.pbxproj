@@ -18,6 +18,9 @@
 		DF01E4D425C095290087AA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF01E4D325C095290087AA67 /* Assets.xcassets */; };
 		DF01E4D725C095290087AA67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF01E4D625C095290087AA67 /* Preview Assets.xcassets */; };
 		DF01E4E725C107BE0087AA67 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01E4E625C107BE0087AA67 /* MapView.swift */; };
+		DF5DDF12262505FA0035945E /* Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF5DDF11262505FA0035945E /* Light.otf */; };
+		DF5DDF14262507CE0035945E /* Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF5DDF13262507CE0035945E /* Bold.otf */; };
+		DF5DDF16262508180035945E /* SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF5DDF15262508180035945E /* SemiBold.otf */; };
 		DF6F2A6A26166FB500429B35 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6F2A6926166FB500429B35 /* LogIn.swift */; };
 		DF6F2A6C2617482B00429B35 /* AddDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6F2A6B2617482B00429B35 /* AddDevice.swift */; };
 		DF6F2A6E2617484F00429B35 /* DataCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6F2A6D2617484F00429B35 /* DataCapture.swift */; };
@@ -64,6 +67,9 @@
 		DF01E4D625C095290087AA67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF01E4D825C095290087AA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF01E4E625C107BE0087AA67 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DF5DDF11262505FA0035945E /* Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Light.otf; sourceTree = "<group>"; };
+		DF5DDF13262507CE0035945E /* Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bold.otf; sourceTree = "<group>"; };
+		DF5DDF15262508180035945E /* SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SemiBold.otf; sourceTree = "<group>"; };
 		DF6F2A6926166FB500429B35 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		DF6F2A6B2617482B00429B35 /* AddDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDevice.swift; sourceTree = "<group>"; };
 		DF6F2A6D2617484F00429B35 /* DataCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCapture.swift; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				DF01E4CF25C095240087AA67 /* WaterWandIoTApp.swift */,
+				DF5DDF0A2624FE9B0035945E /* Fonts */,
 				DF89CCB725D0EB4200C2C50B /* GlueCode */,
 				DF89CCB625D0EB1300C2C50B /* Views */,
 				DF01E4D325C095290087AA67 /* Assets.xcassets */,
@@ -137,6 +144,16 @@
 				DF01E4D625C095290087AA67 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF5DDF0A2624FE9B0035945E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DF5DDF11262505FA0035945E /* Light.otf */,
+				DF5DDF15262508180035945E /* SemiBold.otf */,
+				DF5DDF13262507CE0035945E /* Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		DF89CCB625D0EB1300C2C50B /* Views */ = {
@@ -230,8 +247,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5DDF12262505FA0035945E /* Light.otf in Resources */,
+				DF5DDF14262507CE0035945E /* Bold.otf in Resources */,
 				DF9081A625F090DB00665F69 /* DummyData.json in Resources */,
 				DF01E4D725C095290087AA67 /* Preview Assets.xcassets in Resources */,
+				DF5DDF16262508180035945E /* SemiBold.otf in Resources */,
 				DF01E4D425C095290087AA67 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,7 +264,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF01E4D225C095240087AA67 /* ContentView.swift in Sources */,
-				DF89CCB125D0E2FE00C2C50B /* SettingsTabView.swift in Sources */,
 				C0B6EF6D2621269A0055F0B6 /* TutorialTabThree.swift in Sources */,
 				DF6F2A6E2617484F00429B35 /* DataCapture.swift in Sources */,
 				DF6F2A6A26166FB500429B35 /* LogIn.swift in Sources */,

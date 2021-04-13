@@ -28,7 +28,7 @@ struct ViewInfoView: View {
         ZStack{
             LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea().offset(y:100)
             VStack {
-                Text(" ID: \(devices[0].id) \n\n\t Coordinates: \n\t\t Lat: \(devices[0].latitude)\t Long: \(devices[0].longitude)\n\n\t Depth: \(devices[0].depth)\n\n\t Temperature: \(devices[0].temperature)\n\n\t Conductivity: \(devices[0].conductivity)\n\n\t Turbidity: \(devices[0].turbidity)\n\n")
+                Text(" ID: \(devices[0].id) \n\n\t Coordinates: \n\t\t\(devices[0].latitude)°N,\t \(devices[0].longitude)°W\n\n\t Depth: \(devices[0].depth) ft\n\n\t Temperature: \(devices[0].temperature) F\n\n\t Conductivity: \(devices[0].conductivity) uS/cm\n\n\t Turbidity: \(devices[0].turbidity) NTU\n\n")
                     .font(.system(size: 15, weight: .semibold, design: .monospaced))
                     .foregroundColor(.backGroundBlue)
                     .background(Color.clear)

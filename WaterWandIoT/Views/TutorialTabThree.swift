@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct TutorialTabThree: View {
+    
+    let gradient = Gradient(colors: [.white, .backGroundBlue])
+    
     var body: some View {
         ZStack {
+            
+            LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+            
             VStack(spacing: 20) {
                 Spacer()
                 
                 // title
                 Text("Map Tab")
                     .foregroundColor(Color.white)
-                    .font(.largeTitle)
+                    .font(Font.custom("Bold", size: 40))
                     .fontWeight(.heavy)
                                                 
                 // image
@@ -28,6 +34,7 @@ struct TutorialTabThree: View {
                 
                 // description 1
                 Text("Each WaterWand pin on the map is a water sample uploaded by another user.")
+                    .font(Font.custom("Light", size: 20))
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
@@ -35,6 +42,7 @@ struct TutorialTabThree: View {
                 
                 // description 2
                 Text("The map tab queries these water samples from an AWS cloud storage server and displays them on a MapBox map.")
+                    .font(Font.custom("Light", size: 20))
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
@@ -42,6 +50,7 @@ struct TutorialTabThree: View {
                 
                 // description 3
                 Text("Click on individual pins to display their depth, temperature, conductivity, and turbidity values.")
+                    .font(Font.custom("Light", size: 20))
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
@@ -55,7 +64,6 @@ struct TutorialTabThree: View {
             minHeight: 0,
             maxHeight: .infinity,
             alignment: .center)
-        .background(Color("pastelBlue"))
         .cornerRadius(20)
         .padding(.horizontal, 20)
         .padding(.vertical, 10)

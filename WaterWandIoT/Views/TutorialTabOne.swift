@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct TutorialTabOne: View {
+    
+    let gradient = Gradient(colors: [.white, .backGroundBlue])
+    
     var body: some View {
         ZStack {
+            LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+            
             VStack(spacing: 20) {
                 Spacer()
                 
                 // title
                 Text("Water Wand")
                     .foregroundColor(Color.white)
-                    .font(.largeTitle)
+                    .font(Font.custom("Bold", size: 40))
                     .fontWeight(.heavy)
                 
                 // image 1
@@ -32,6 +37,7 @@ struct TutorialTabOne: View {
                 
                 // description
                 Text("Empowering and uniting citizen scientists to collect data and combat urban flooding")
+                    .font(Font.custom("Light", size: 20))
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
@@ -45,7 +51,6 @@ struct TutorialTabOne: View {
             minHeight: 0,
             maxHeight: .infinity,
             alignment: .center)
-        .background(Color("pastelBlue"))
         .cornerRadius(20)
         .padding(.horizontal, 20)
         .padding(.vertical, 10)
